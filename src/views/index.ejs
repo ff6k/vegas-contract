@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="margin-top:50px">
+                <div class="col-md-4">        
+                </div>
+                <div class="col-md-4"> 
+                    
+                </div>
+                <div class="col-md-4"> 
+                </div>
+
+                <!-- <button onclick="test()">Generate</button> -->
+            </div>
+            <div class="row" style="margin-top:50px">
+                <div class="col-md-4">        
+        
+                    <input type="text" id="randomNumber1" class="form-control" value='<%= random1 %>'>
+                </div>
+                <div class="col-md-4"> 
+                    <input type="text" id="randomNumber1" class="form-control" value='<%= random2 %>'>
+
+                </div>
+                <div class="col-md-4"> 
+                    <input type="text" id="randomNumber1" class="form-control" value='<%= random2 %>'>
+
+                </div>
+
+                <!-- <button onclick="test()">Generate</button> -->
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                var rand1 = $("#randomNumber1").val();
+                var rand2 = $("#randomNumber2").val();
+                var rand3 = $("#randomNumber3").val();
+                // alert(rand1);
+                // alert(rand2);
+                // alert(rand3);
+                for (var i = 0; i < rand1.length; i++) {
+                    console.log(rand1.charAt(i));
+                    $( "#randomNumber" ).append( "<p>"+ rand1.charAt(i) +"</p>" );
+                }
+            });
+        </script>
+    </body>
+</html>
